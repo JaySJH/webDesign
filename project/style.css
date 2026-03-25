@@ -1,0 +1,18 @@
+/*body - 表頭樣式*/
+/*1.LOGO 圖片*/
+.headLogo{
+    width: 320px;
+    height: 80px;
+    margin: 20px 50px 20px 50px ;
+}
+
+/*body - 表身樣式*/
+.praying {
+    max-width: auto;
+    height: auto;
+    border: 3px solid #ccc; /* 加一個灰色邊框 */
+    padding: 10px;          /* 圖片跟邊框之間留一點空白 */
+    background-color: white; /* 讓 Padding 區域變白色，像相框一樣 */
+    margin: 30px auto;      /* 跟上面的 Logo 或文字推開距離 */
+    display: block;
+}
