@@ -1,18 +1,39 @@
 /*body - 表頭樣式*/
 /*1.LOGO 圖片*/
 .headLogo{
-    width: 320px;
-    height: 80px;
-    margin: 20px 50px 20px 50px ;
+    width: 245px;
+    height: 47px;
+    margin: 16px 5px;
 }
 
 /*body - 表身樣式*/
+.annouancement {
+    font-size: 48px;
+    margin: 0%;
+}
+
+.information {
+    font-size: 32px;
+    margin-top: 20px;
+    margin: 0%;
+}
+
+
+.prayingbox {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* 水平置中 */
+    flex-direction: column;
+}
+
 .praying {
-    max-width: auto;
+    width: 100%;
     height: auto;
     border: 3px solid #ccc; /* 加一個灰色邊框 */
     padding: 10px;          /* 圖片跟邊框之間留一點空白 */
     background-color: white; /* 讓 Padding 區域變白色，像相框一樣 */
     margin: 30px auto;      /* 跟上面的 Logo 或文字推開距離 */
-    display: block;
 }
