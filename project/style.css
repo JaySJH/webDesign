@@ -1,3 +1,8 @@
+/* 讓文字容器超出隱藏，避免出現橫向捲軸 */
+body {
+    overflow-x: hidden;
+}
+
 /*body - 表頭樣式*/
 /*1.LOGO 圖片*/
 .headLogo{
@@ -7,15 +12,39 @@
 }
 
 /*body - 表身樣式*/
+.annouancement-box {
+    min-width: 100%;
+    overflow: hidden; /* 隱藏超出容器的部分 */
+    /*  position: relative; /* 讓 JavaScript 可以控制位置 */
+    width: max-content;
+    display: flex;
+    animation: marquee 6s linear infinite;  /* 設定動畫：名稱 時長 線性運動 無限循環 */
+}
+
 .annouancement {
     font-size: 48px;
     margin: 0%;
+    white-space: nowrap;      /* 強制文字不換行 */
+    position: relative;       /* 讓 JavaScript 可以控制位置 */
+    display: inline-block;    /* 寬度隨文字長度變化 */
+    min-width: 100%;
+    animation: marquee 6 linear infinite;  /* 設定動畫：名稱 時長 線性運動 無限循環 */
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 .information {
     font-size: 32px;
     margin-top: 20px;
     margin: 0%;
+    text-align: center;
 }
 
 
