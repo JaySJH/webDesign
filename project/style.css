@@ -20,7 +20,8 @@
 
 
 .prayingbox {
-    width: 60%;
+    width: 90%;
+    max-width: 750px; /* 設定最大寬度，讓圖片不會太大 */
     height: auto;
     display: flex;
     justify-content: center;
